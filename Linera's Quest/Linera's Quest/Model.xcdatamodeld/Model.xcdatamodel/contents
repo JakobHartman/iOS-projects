@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="3401" systemVersion="13C64" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="LineraQuestDataBase" representedClassName="LineraQuestDataBase" syncable="YES">
+        <attribute name="defenseDice" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="healthDice" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="name1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name3" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name4" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name5" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name6" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name7" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name8" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name9" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name10" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="score1" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="score2" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="score3" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="score4" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="score5" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="score6" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="score7" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="score8" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="score9" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="score10" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="strengthDice" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="LineraQuestDataBase" positionX="160" positionY="192" width="128" height="388"/>
+    </elements>
+</model>

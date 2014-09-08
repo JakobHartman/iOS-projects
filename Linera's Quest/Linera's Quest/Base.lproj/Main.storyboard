@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="LVB-YS-i5n">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="CtS-rA-C9T">
+            <objects>
+                <viewController id="LVB-YS-i5n" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lXD-bN-6N8"/>
+                        <viewControllerLayoutGuide type="bottom" id="jcg-Hi-tFY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bdc-N1-crn" customClass="SKView">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vZP-nv-fOd">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <items>
+                                    <barButtonItem image="View_Details-512.png" style="plain" id="Ign-ME-NYl">
+                                        <connections>
+                                            <action selector="goToMainMenu:" destination="LVB-YS-i5n" id="bUk-p6-Ims"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="pZe-82-ymi"/>
+                                    <barButtonItem image="shoping_cart-512.png" id="vZN-cP-iY7"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="OK6-m5-rR4"/>
+                                    <barButtonItem enabled="NO" image="person30.png" id="Euq-vH-2vH"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="eKf-86-0wr"/>
+                                    <barButtonItem enabled="NO" image="addPotion.png" id="Kq8-bE-Y27"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="NxR-h0-Wxy"/>
+                                    <barButtonItem image="rating-512.png" id="96e-g9-69w"/>
+                                </items>
+                                <color key="tintColor" red="0.076582209309999996" green="0.05559773632" blue="0.28454059100000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </toolbar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Euc-q7-uD4">
+                                <rect key="frame" x="122" y="116" width="76" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="New Game"/>
+                                <connections>
+                                    <action selector="startAnewGame:" destination="LVB-YS-i5n" eventType="touchUpInside" id="yDZ-Lf-SuZ"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What is your Characters name?" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="242" translatesAutoresizingMaskIntoConstraints="NO" id="vRB-hz-fyU">
+                                <rect key="frame" x="39" y="149" width="242" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S01-VW-MP1">
+                                <rect key="frame" x="39" y="178" width="242" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qF3-s6-WI0">
+                                <rect key="frame" x="129" y="216" width="62" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Continue">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="getCharacterName:" destination="LVB-YS-i5n" eventType="touchUpInside" id="HZJ-VI-cYC"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="30" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="282" translatesAutoresizingMaskIntoConstraints="NO" id="bb5-mV-Pd1">
+                                <rect key="frame" x="27" y="17" width="282" height="469"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Story Text">
+                                        <attributes>
+                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mQv-fh-mP7">
+                                <rect key="frame" x="137" y="494" width="62" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Continue">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="rollStrength:" destination="LVB-YS-i5n" eventType="touchUpInside" id="KEB-Wc-n0i"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dice" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B7h-tH-cEu">
+                                <rect key="frame" x="151" y="341" width="35" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="Skview" destination="bdc-N1-crn" id="hVD-Rm-isS"/>
+                        <outlet property="addPotionsButton" destination="Kq8-bE-Y27" id="f7p-b9-Kii"/>
+                        <outlet property="characterLabel" destination="vRB-hz-fyU" id="hyy-Fg-XyY"/>
+                        <outlet property="characterName" destination="S01-VW-MP1" id="eJg-Hr-zLK"/>
+                        <outlet property="characterSheetButton" destination="Euq-vH-2vH" id="ENK-Mj-emX"/>
+                        <outlet property="continueFromCharacter" destination="qF3-s6-WI0" id="qEM-Wt-T8G"/>
+                        <outlet property="continueToCreate" destination="mQv-fh-mP7" id="zFG-v3-oqt"/>
+                        <outlet property="continueToStrength" destination="mQv-fh-mP7" id="oqN-6h-yzY"/>
+                        <outlet property="diceLabel" destination="B7h-tH-cEu" id="TTW-MZ-1S1"/>
+                        <outlet property="startButton" destination="Euc-q7-uD4" id="qpG-00-iKC"/>
+                        <outlet property="storyLine" destination="bb5-mV-Pd1" id="frm-H9-Xsj"/>
+                        <outlet property="view" destination="bdc-N1-crn" id="vin-vP-uUr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="btX-cZ-eVz" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="View_Details-512.png" width="30" height="30"/>
+        <image name="addPotion.png" width="30" height="30"/>
+        <image name="person30.png" width="25" height="46"/>
+        <image name="rating-512.png" width="30" height="30"/>
+        <image name="shoping_cart-512.png" width="30" height="30"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <nil key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

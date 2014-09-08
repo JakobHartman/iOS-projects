@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PreferenceSpecifiers</key>
+	<array>
+		<dict>
+			<key>Type</key>
+			<string>PSMultiValueSpecifier</string>
+			<key>Title</key>
+			<string>Food Weight</string>
+			<key>Key</key>
+			<string>food_weight</string>
+			<key>DefaultValue</key>
+			<real>12.5</real>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSMultiValueSpecifier</string>
+			<key>Title</key>
+			<string>Drink Weight</string>
+			<key>Key</key>
+			<string>drink_weight</string>
+			<key>DefaultValue</key>
+			<real>12.5</real>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSMultiValueSpecifier</string>
+			<key>Title</key>
+			<string>Check Weight</string>
+			<key>Key</key>
+			<string>check_weight</string>
+			<key>DefaultValue</key>
+			<real>12.5</real>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSMultiValueSpecifier</string>
+			<key>Title</key>
+			<string>Integrity Weight</string>
+			<key>Key</key>
+			<string>integ_weight</string>
+			<key>DefaultValue</key>
+			<real>12.5</real>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSMultiValueSpecifier</string>
+			<key>Title</key>
+			<string>Accuracy Weight</string>
+			<key>Key</key>
+			<string>accu_weight</string>
+			<key>DefaultValue</key>
+			<real>12.5</real>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSMultiValueSpecifier</string>
+			<key>Title</key>
+			<string>Personable Weight</string>
+			<key>Key</key>
+			<string>person_weight</string>
+			<key>DefaultValue</key>
+			<real>12.5</real>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSMultiValueSpecifier</string>
+			<key>Title</key>
+			<string>Atmosphere Weight</string>
+			<key>Key</key>
+			<string>atmos_weight</string>
+			<key>DefaultValue</key>
+			<real>12.5</real>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSMultiValueSpecifier</string>
+			<key>Title</key>
+			<string>Feeling Weight</string>
+			<key>Key</key>
+			<string>feel_weight</string>
+			<key>DefaultValue</key>
+			<real>12.5</real>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSMultiValueSpecifier</string>
+			<key>Title</key>
+			<string>Minimum Percent</string>
+			<key>Key</key>
+			<string>min_percent</string>
+			<key>DefaultValue</key>
+			<integer>10</integer>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSMultiValueSpecifier</string>
+			<key>Title</key>
+			<string>Max Percent</string>
+			<key>Key</key>
+			<string>max_percent</string>
+			<key>DefaultValue</key>
+			<string>20</string>
+		</dict>
+	</array>
+	<key>StringsTable</key>
+	<string>Root</string>
+</dict>
+</plist>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6172.15" systemVersion="14A261i" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="GameDefaults" representedClassName="GameDefaults" syncable="YES">
+        <attribute name="bookMaster" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="bookSimple" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="defDice6" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="defDice12" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="firstTimeRunning" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hpDice40" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hpDice100" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pots10" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pots20" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pots40" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="strDice6" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="strDice12" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="timeStamp" optional="YES" attributeType="Date" syncable="YES"/>
+    </entity>
+    <entity name="Highscores" representedClassName="Highscores" syncable="YES">
+        <attribute name="level" optional="YES" attributeType="Integer 16" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="monsterName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="playerName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="score" optional="YES" attributeType="Integer 16" defaultValueString="0.0" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="GameDefaults" positionX="-63" positionY="9" width="128" height="238"/>
+        <element name="Highscores" positionX="-63" positionY="-18" width="128" height="105"/>
+    </elements>
+</model>

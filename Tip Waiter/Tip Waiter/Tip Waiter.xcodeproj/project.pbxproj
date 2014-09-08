@@ -1,0 +1,419 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A47213A919911A7E00526566 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A47213A819911A7E00526566 /* main.m */; };
+		A47213AC19911A7E00526566 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A47213AB19911A7E00526566 /* AppDelegate.m */; };
+		A47213AF19911A7E00526566 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A47213AE19911A7E00526566 /* ViewController.m */; };
+		A47213B219911A7E00526566 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A47213B019911A7E00526566 /* Main.storyboard */; };
+		A47213B419911A7E00526566 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A47213B319911A7E00526566 /* Images.xcassets */; };
+		A47213C019911A7E00526566 /* Tip_WaiterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A47213BF19911A7E00526566 /* Tip_WaiterTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A47213BA19911A7E00526566 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A472139B19911A7E00526566 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A47213A219911A7E00526566;
+			remoteInfo = "Tip Waiter";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A47213A319911A7E00526566 /* Tip Waiter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tip Waiter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A47213A719911A7E00526566 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A47213A819911A7E00526566 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A47213AA19911A7E00526566 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A47213AB19911A7E00526566 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A47213AD19911A7E00526566 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A47213AE19911A7E00526566 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A47213B119911A7E00526566 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A47213B319911A7E00526566 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A47213B919911A7E00526566 /* Tip WaiterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tip WaiterTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A47213BE19911A7E00526566 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A47213BF19911A7E00526566 /* Tip_WaiterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tip_WaiterTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A47213A019911A7E00526566 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A47213B619911A7E00526566 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A472139A19911A7E00526566 = {
+			isa = PBXGroup;
+			children = (
+				A47213A519911A7E00526566 /* Tip Waiter */,
+				A47213BC19911A7E00526566 /* Tip WaiterTests */,
+				A47213A419911A7E00526566 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A47213A419911A7E00526566 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A47213A319911A7E00526566 /* Tip Waiter.app */,
+				A47213B919911A7E00526566 /* Tip WaiterTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A47213A519911A7E00526566 /* Tip Waiter */ = {
+			isa = PBXGroup;
+			children = (
+				A47213AA19911A7E00526566 /* AppDelegate.h */,
+				A47213AB19911A7E00526566 /* AppDelegate.m */,
+				A47213AD19911A7E00526566 /* ViewController.h */,
+				A47213AE19911A7E00526566 /* ViewController.m */,
+				A47213B019911A7E00526566 /* Main.storyboard */,
+				A47213B319911A7E00526566 /* Images.xcassets */,
+				A47213A619911A7E00526566 /* Supporting Files */,
+			);
+			path = "Tip Waiter";
+			sourceTree = "<group>";
+		};
+		A47213A619911A7E00526566 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A47213A719911A7E00526566 /* Info.plist */,
+				A47213A819911A7E00526566 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A47213BC19911A7E00526566 /* Tip WaiterTests */ = {
+			isa = PBXGroup;
+			children = (
+				A47213BF19911A7E00526566 /* Tip_WaiterTests.m */,
+				A47213BD19911A7E00526566 /* Supporting Files */,
+			);
+			path = "Tip WaiterTests";
+			sourceTree = "<group>";
+		};
+		A47213BD19911A7E00526566 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A47213BE19911A7E00526566 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A47213A219911A7E00526566 /* Tip Waiter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A47213C319911A7E00526566 /* Build configuration list for PBXNativeTarget "Tip Waiter" */;
+			buildPhases = (
+				A472139F19911A7E00526566 /* Sources */,
+				A47213A019911A7E00526566 /* Frameworks */,
+				A47213A119911A7E00526566 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Tip Waiter";
+			productName = "Tip Waiter";
+			productReference = A47213A319911A7E00526566 /* Tip Waiter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A47213B819911A7E00526566 /* Tip WaiterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A47213C619911A7E00526566 /* Build configuration list for PBXNativeTarget "Tip WaiterTests" */;
+			buildPhases = (
+				A47213B519911A7E00526566 /* Sources */,
+				A47213B619911A7E00526566 /* Frameworks */,
+				A47213B719911A7E00526566 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A47213BB19911A7E00526566 /* PBXTargetDependency */,
+			);
+			name = "Tip WaiterTests";
+			productName = "Tip WaiterTests";
+			productReference = A47213B919911A7E00526566 /* Tip WaiterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A472139B19911A7E00526566 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Jakob Hartman";
+				TargetAttributes = {
+					A47213A219911A7E00526566 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					A47213B819911A7E00526566 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = A47213A219911A7E00526566;
+					};
+				};
+			};
+			buildConfigurationList = A472139E19911A7E00526566 /* Build configuration list for PBXProject "Tip Waiter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A472139A19911A7E00526566;
+			productRefGroup = A47213A419911A7E00526566 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A47213A219911A7E00526566 /* Tip Waiter */,
+				A47213B819911A7E00526566 /* Tip WaiterTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A47213A119911A7E00526566 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A47213B219911A7E00526566 /* Main.storyboard in Resources */,
+				A47213B419911A7E00526566 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A47213B719911A7E00526566 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A472139F19911A7E00526566 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A47213AF19911A7E00526566 /* ViewController.m in Sources */,
+				A47213AC19911A7E00526566 /* AppDelegate.m in Sources */,
+				A47213A919911A7E00526566 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A47213B519911A7E00526566 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A47213C019911A7E00526566 /* Tip_WaiterTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A47213BB19911A7E00526566 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A47213A219911A7E00526566 /* Tip Waiter */;
+			targetProxy = A47213BA19911A7E00526566 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A47213B019911A7E00526566 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A47213B119911A7E00526566 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A47213C119911A7E00526566 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A47213C219911A7E00526566 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A47213C419911A7E00526566 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = "Tip Waiter/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A47213C519911A7E00526566 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = "Tip Waiter/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A47213C719911A7E00526566 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Tip Waiter.app/Tip Waiter";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Tip WaiterTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		A47213C819911A7E00526566 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Tip Waiter.app/Tip Waiter";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Tip WaiterTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A472139E19911A7E00526566 /* Build configuration list for PBXProject "Tip Waiter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A47213C119911A7E00526566 /* Debug */,
+				A47213C219911A7E00526566 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A47213C319911A7E00526566 /* Build configuration list for PBXNativeTarget "Tip Waiter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A47213C419911A7E00526566 /* Debug */,
+				A47213C519911A7E00526566 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A47213C619911A7E00526566 /* Build configuration list for PBXNativeTarget "Tip WaiterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A47213C719911A7E00526566 /* Debug */,
+				A47213C819911A7E00526566 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A472139B19911A7E00526566 /* Project object */;
+}
