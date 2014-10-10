@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Walking Distances</title>
+    <meta name="viewport" content="width=device-width; height=device-height; initial-scale=.5; user-scalable=no; target-densityDpi=device-dpi" />
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="betaMobileApp.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script src="betaMobileAppCampusData.js"></script>
+    <script src="betaMobileAppHousingData.js"></script>
+    <script src="betaMobileApp.js"></script>
+    <script src="betaMobileAppMenu.js"></script>
+    
+  </head>
+  <body id="bd" onload="firstTime()">
+    <div id="startInstructions"></div>
+    <div id="mainGUITrim">
+      <div id="mainGUI">
+        <div id="distanceBox">Distance</div>
+        <div id="timeBox">Time</div>
+        <div id="feetBox">Feet</div>
+        <div id="textBox">From&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To</div>
+        <div id="totalBox">Total(ft)</div>
+        <div id="totalMiBox">Total(mi)</div>
+        <div id="totalTimeBox">Total(mins)</div>
+        <div id="totalClear" onclick="totalClear()">X</div>
+      </div>
+    </div>
+    <div id="map-canvas">
+    </div>
+    
+    
+    <div id="tabs">
+    
+      <div id="campus" class="tabs">
+        <div class="image" onclick="slideTabLeft(document.getElementById('campus'))" id="Image"></div>
+        <h3>Campus Buildings</h3>
+        <p class="close" onclick="slideTabRight(document.getElementById('campus'))">X</p>
+        <div class="list" id='cList'>
+        </div>
+        <p class="instructions">Select From this List</p>
+      </div>
+
+      <div id="women" class="tabs">
+        <div class="image" onclick="slideTabLeft(document.getElementById('women'))"></div>
+        <h3>Women's Housing</h3>
+        <p class="close" onclick="slideTabRight(document.getElementById('women'))">X</p>
+        <div class="list" id='wList'>
+        </div>
+        <p class="instructions">Select From this List</p>
+      </div>
+
+      <div id="men" class="tabs">
+        <div class="image" onclick="slideTabLeft(document.getElementById('men'))" id="Image"></div>
+        <h3>Men's Housing</h3>
+        <p class="close" onclick="slideTabRight(document.getElementById('men'))">X</p>
+        <div class="list" id='meList'></div>
+        <p class="instructions">Select From this List</p>
+      </div>
+
+      <div id="married" class="tabs">
+        <div class="image" onclick="slideTabLeft(document.getElementById('married'))" id="Image"></div>
+        <h3>Married Housing</h3>
+        <p class="close" onclick="slideTabRight(document.getElementById('married'))">X</p>
+        <div class="list" id='mList'>
+        </div>
+        <p class="instructions">Select From this List</p>
+      </div>
+
+      <div id="custom" class="tabs">
+        <div class="image" onclick="slideTabLeft(document.getElementById('custom'))"id="Image"></div>
+        <h3>Personal Addresses</h3>
+        <p class="close" onclick="slideTabRight(document.getElementById('custom'))">X</p>
+        <div class="list" id='ctList'>
+        </div>
+        <p class="instructions">Add An Address</p>
+        <input id='customAddress' placeholder ='Address'/>
+        <input id='customName' placeholder = 'Name'/>
+        <p id='addButton' onclick="checkLine()">+</p>
+      </div>
+
+      <div id="history" class="tabs">
+        <div class="image" onclick="slideTabLeft(document.getElementById('history'))"id="historyImage"></div>
+        <h3>History</h3>
+        <p class="close" onclick="slideTabRight(document.getElementById('history'))">X</p>
+        <p class="clear" onclick="clearHistory()">Clear History</p>
+        <div class="list" id='hList'>
+        </div>
+        <p class="instructions">Last 10 Distances</p>
+      </div>
+      <div id="tips" class="tabs">
+          <div class="image" onclick="slideTabLeft(document.getElementById('tips'))"id="tipImage"></div>
+          <h3> Student Health Center</h3>
+          <iframe src="http://www.byui.edu/Documents/health-center/Mobilenews.html" id="newsReel"></iframe>
+          <p class="close" onclick="slideTabRight(document.getElementById('tips'))">X</p>
+          <a href="https://www.facebook.com/BYUIStudentHealth"><img id="facebookLink" src="facebook.jpg" /></a>
+          <a href="http://healthcenterwellness.blogspot.com"><img id="wellnessLogo" src="wellnesslogo.png"/></a>
+          <a href="http://shcwomenshealth.blogspot.com"><img id="womensLogo" src="women logo.png"/></a>
+          <p id="healthLink" onclick="window.open('http://www.byui.edu/health-center/?cid=fli:172 ','_self ')"/>SHC</p>
+          <p id="healthLink2" onclick="promptForLocation()"/>Find SHC</p>
+            <iframe src="https://www.byui.edu/Documents/health-center/healthcentercontact.html" id="innerFrame" scrolling='no'></iframe>
+          <div class="list" id='tList' style="left:10px;top:225px;width:280px;height:160px;">
+              <p id="ServicesMenu">Health Center Services</p>
+              <p onclick="window.open('http://www.byui.edu/health-center/medical-services/primary-care ','_self ')" class="servicesLinks">Primary Care</p>
+              <p onclick="window.open('http://www.byui.edu/health-center/appointments ','_self ')" class="servicesLinks">Appointments</p>
+              <p onclick="window.open('http://www.byui.edu/health-center/medical-services/after-hours ','_self ')" class="servicesLinks">After Hours</p>
+              <p onclick="window.open('http://www.byui.edu/health-center/medical-services/walk-in-service ','_self ')" class="servicesLinks">BYU-I Care</p>
+              <p onclick="window.open('http://www.byui.edu/health-center/medical-services/premarital-exams ','_self ')" class="servicesLinks">Premarital Exams</p>
+              <p onclick="window.open('http://www.byui.edu/health-center/medical-services/mission-physicals ','_self ')" class="servicesLinks">Mission Physicals</p>
+              <p onclick="window.open('http://www.byui.edu/health-center/medical-services/ins-physicals ','_self ')" class="servicesLinks">INS Physicals</p>
+              <p onclick="window.open('http://www.byui.edu/health-center/medical-services/tb-testing ','_self ')" class="servicesLinks">TB Testing</p>
+              <p onclick="window.open('http://www.byui.edu/health-center/medical-services/travel-health ','_self ')" class="servicesLinks">Travel Health</p>
+              <p onclick="window.open('http://www.byui.edu/health-center/medical-services/immunizations ','_self ')" class="servicesLinks">Immunizations</p>
+              <p onclick="window.open('http://www.byui.edu/health-center/medical-services/laboratory ','_self ')" class="servicesLinks">Laboratory</p>
+              <p onclick="window.open('http://www.byui.edu/health-center/medical-services/radiology ','_self ')" class="servicesLinks">Radiology</p>
+              <p onclick="window.open('http://www.byui.edu/health-center/medical-services/pharmacy ','_self ')" class="servicesLinks">Pharmacy</p>
+              <p onclick="window.open('http://www.byui.edu/health-center/student-health-plan  ','_self ')" class="servicesLinks">Health Plan</p>
+              <p onclick="window.open('http://www.byui.edu/health-center/medical-services/wellness ','_self ')" class="servicesLinks">Wellness</p>
+          </div>
+          </div>
+      </div>
+    </div>
+    <div id="instructionBody">
+    <div id="instructions" onclick="showInstruction()">Instructions</div>
+    </div>
+  </body>
+</html>
